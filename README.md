@@ -14,4 +14,4 @@ The module `model.py` contains the definitions of the Pytorch-models and `ddpg_a
 In the jupyter-notebook `Continous_Control.ipynb` lies everything you need to start the environment and train the agent.
 
 ## ToDos
-This solution doesn't contain useful improvements e.g. prioritized experience replay (PER). I experimented a bit with PER, but although the agent learned faster than without PER and reaches scores of >35, the scores deteriorated eventually and got stuck around 22. Trying out different random seeds didn't change this behaviour. So there's a bit more to do. 
+This solution doesn't contain useful improvements e.g. prioritized experience replay (PER). I experimented a bit with PER, but although the agent learned faster than without PER and reaches scores of >35 fairly quick, the scores deteriorated eventually and got stuck around 22. Trying out different random seeds didn't change this behaviour. So there's a bit bugfixing to do. 
