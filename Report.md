@@ -32,7 +32,9 @@ self.device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 ```
 
 ## Results
+The results are shown in the plot below. Interestingly the shown and best results are achieved without batchnormalization or prioritized experience replay (per). Both actual improvements result in a lack of convergence and a quick hyperparametersearch didn't change this behaviour. In the jupyter notebook you can easily enable the per and try this out. The code for the per is taken from the first project, where it achieved better results than the standard replay buffer.
 
+![Scoreplot](https://github.com/ChaosMcChief/DRLND_p2_Continous_Control/blob/master/Scores.png)
 
 ## Ideas for future experiments
-The first thing that could be tried out is taking the ddpg-approach on the next level by implementing the [D4PG](https://arxiv.org/pdf/1804.08617.pdf)-algorithm, in which the critic doesn't directly estimates the action-value-function, but estimates a probability distribution of the said function. This should improve stability in training, which -- at least in my implementation -- is kind of an issue for the ddpg-algorithm in this environment.
+The first thing that could be tried out is taking the ddpg-approach on the next level by implementing the [D4PG](https://arxiv.org/pdf/1804.08617.pdf)-algorithm, in which the critic doesn't directly estimates the action-value-function, but estimates a probability distribution of the said function. This should improve stability in training, which -- at least in my implementation -- is kind of an issue for the ddpg-algorithm in this environment. Also the distributed training could help with stability, where multiple different agents are learning timewise seperatly and share experiences.
