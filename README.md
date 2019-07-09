@@ -4,6 +4,11 @@ This repository is a possible solution to the second Project of the Deep reinfor
 ## Intro
 The environment in this project is derived from the Unity Reacher environment and the solution is written for Pytorch. A quick description to the environment as well as to the state- and action-space can be found on the [Udacity Deep reinforcement learning github repo](https://github.com/udacity/deep-reinforcement-learning/tree/master/p2_continuous-control). The solution for this project uses the code from the first project as boilerplate code and reuses elements such as the replay memory and other helperfunctions.
 
+## Getting Started
+Besides some Python standard packages, this project utilises [Unity ML-Agents](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Installation.md), [NumPy](http://www.numpy.org/) and [PyTorch](https://pytorch.org/)
+
+To get things running, the reacher-app is needed also. An detailed guide for setting up the environment is to be found in the [Project Github repo](https://github.com/udacity/deep-reinforcement-learning/tree/master/p2_continuous-control)
+
 ## What's in here?
 This solution uses the DDPG-approach as described in this [paper](https://arxiv.org/pdf/1509.02971.pdf). The jupyter notebook sets up the environment, trains an agent and let you watch the trained agent.
 
